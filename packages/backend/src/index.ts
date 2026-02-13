@@ -74,4 +74,5 @@ backend.add(rootSystemMetadataServiceFactory);
 
 backend.add(import('@backstage/plugin-events-backend-module-google-pubsub'));
 backend.add(import('@backstage/plugin-mcp-actions-backend'));
+backend.add(import('@internal/plugin-security-compliance-backend'));
 backend.start();

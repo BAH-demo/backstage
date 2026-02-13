@@ -51,6 +51,7 @@ import { convertLegacyEntityContentExtension } from '@backstage/plugin-catalog-r
 import { pluginInfoResolver } from './pluginInfoResolver';
 import { appModuleNav } from './modules/appModuleNav';
 import devtoolsPlugin from '@backstage/plugin-devtools/alpha';
+import securityCompliancePlugin from '@internal/plugin-security-compliance/alpha';
 import { unprocessedEntitiesDevToolsContent } from '@backstage/plugin-catalog-unprocessed-entities/alpha';
 import catalogPlugin from '@backstage/plugin-catalog/alpha';
 import InfoIcon from '@material-ui/icons/Info';
@@ -180,6 +181,7 @@ const app = createApp({
     customHomePageModule,
     devtoolsPlugin,
     devtoolsPluginUnprocessed,
+    securityCompliancePlugin,
     ...collectedLegacyPlugins,
   ],
   advanced: {
