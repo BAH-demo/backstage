@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: frontend-app
+  description: Customer-facing frontend application with vulnerability scanning
+  annotations:
+    security.example.com/scanner: Trivy
+    security.example.com/compliance-level: IL2
+    security.example.com/last-scan: "2025-03-28T09:15:00Z"
+  tags:
+    - frontend
+    - security
+spec:
+  type: website
+  lifecycle: production
+  owner: app-dev-team

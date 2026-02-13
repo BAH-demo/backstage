@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: secure-api-service
+  description: A security-hardened API service with full STIG compliance tracking
+  annotations:
+    security.example.com/scanner: Grype
+    security.example.com/compliance-level: IL4
+    security.example.com/last-scan: "2025-04-01T14:30:00Z"
+  tags:
+    - security
+    - api
+    - stig
+spec:
+  type: service
+  lifecycle: production
+  owner: platform-security-team

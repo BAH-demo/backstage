@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: data-pipeline
+  description: ETL data pipeline with SonarQube code quality scanning
+  annotations:
+    security.example.com/scanner: SonarQube
+    security.example.com/compliance-level: IL5
+    security.example.com/last-scan: "2025-03-30T22:00:00Z"
+  tags:
+    - data
+    - pipeline
+    - security
+spec:
+  type: service
+  lifecycle: production
+  owner: data-engineering-team
