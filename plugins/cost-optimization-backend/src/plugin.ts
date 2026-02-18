@@ -26,6 +26,7 @@ import {
 } from '@backstage/plugin-cost-optimization-node';
 import { CostDataStore } from './service/CostDataStore';
 import { createRouter } from './service/router';
+import { seedDemoData } from './service/seedDemoData';
 import { stringifyEntityRef } from '@backstage/catalog-model';
 
 class CostProviderRegistry implements CostProviderExtensionPoint {
@@ -77,6 +78,13 @@ export const costOptimizationPlugin = createBackendPlugin({
         const costDataStore = new CostDataStore(db);
 
         await costDataStore.runMigrations();
+
+        const existingRecords = await costDataStore.getSummary('2000-01-01', '2099-12-31');
+        if (existingRecords.totalCost === 0) {
+          logger.info('No cost data found, seeding demo data...');
+          await seedDemoData(costDataStore);
+          logger.info('Demo data seeded successfully');
+        }
 
         const scheduleConfig = config.getOptionalConfig(
           'costOptimization.schedule',
