@@ -5666,6 +5666,90 @@ __metadata:
   languageName: unknown
   linkType: soft
 
+"@backstage/plugin-cost-optimization-backend-module-aws@workspace:^, @backstage/plugin-cost-optimization-backend-module-aws@workspace:plugins/cost-optimization-backend-module-aws":
+  version: 0.0.0-use.local
+  resolution: "@backstage/plugin-cost-optimization-backend-module-aws@workspace:plugins/cost-optimization-backend-module-aws"
+  dependencies:
+    "@backstage/backend-plugin-api": "workspace:^"
+    "@backstage/cli": "workspace:^"
+    "@backstage/config": "workspace:^"
+    "@backstage/plugin-cost-optimization-common": "workspace:^"
+    "@backstage/plugin-cost-optimization-node": "workspace:^"
+  languageName: unknown
+  linkType: soft
+
+"@backstage/plugin-cost-optimization-backend@workspace:^, @backstage/plugin-cost-optimization-backend@workspace:plugins/cost-optimization-backend":
+  version: 0.0.0-use.local
+  resolution: "@backstage/plugin-cost-optimization-backend@workspace:plugins/cost-optimization-backend"
+  dependencies:
+    "@backstage/backend-plugin-api": "workspace:^"
+    "@backstage/catalog-client": "workspace:^"
+    "@backstage/catalog-model": "workspace:^"
+    "@backstage/cli": "workspace:^"
+    "@backstage/config": "workspace:^"
+    "@backstage/errors": "workspace:^"
+    "@backstage/plugin-catalog-node": "workspace:^"
+    "@backstage/plugin-cost-optimization-common": "workspace:^"
+    "@backstage/plugin-cost-optimization-node": "workspace:^"
+    express: "npm:^4.22.0"
+    express-promise-router: "npm:^4.1.0"
+    knex: "npm:^3.0.0"
+    luxon: "npm:^3.0.0"
+    uuid: "npm:^9.0.0"
+  languageName: unknown
+  linkType: soft
+
+"@backstage/plugin-cost-optimization-common@workspace:^, @backstage/plugin-cost-optimization-common@workspace:plugins/cost-optimization-common":
+  version: 0.0.0-use.local
+  resolution: "@backstage/plugin-cost-optimization-common@workspace:plugins/cost-optimization-common"
+  dependencies:
+    "@backstage/cli": "workspace:^"
+    "@backstage/plugin-permission-common": "workspace:^"
+  languageName: unknown
+  linkType: soft
+
+"@backstage/plugin-cost-optimization-node@workspace:^, @backstage/plugin-cost-optimization-node@workspace:plugins/cost-optimization-node":
+  version: 0.0.0-use.local
+  resolution: "@backstage/plugin-cost-optimization-node@workspace:plugins/cost-optimization-node"
+  dependencies:
+    "@backstage/backend-plugin-api": "workspace:^"
+    "@backstage/cli": "workspace:^"
+    "@backstage/plugin-cost-optimization-common": "workspace:^"
+  languageName: unknown
+  linkType: soft
+
+"@backstage/plugin-cost-optimization@workspace:^, @backstage/plugin-cost-optimization@workspace:plugins/cost-optimization":
+  version: 0.0.0-use.local
+  resolution: "@backstage/plugin-cost-optimization@workspace:plugins/cost-optimization"
+  dependencies:
+    "@backstage/catalog-model": "workspace:^"
+    "@backstage/cli": "workspace:^"
+    "@backstage/core-components": "workspace:^"
+    "@backstage/core-plugin-api": "workspace:^"
+    "@backstage/dev-utils": "workspace:^"
+    "@backstage/plugin-catalog-react": "workspace:^"
+    "@backstage/plugin-cost-optimization-common": "workspace:^"
+    "@backstage/test-utils": "workspace:^"
+    "@material-ui/core": "npm:^4.12.2"
+    "@material-ui/icons": "npm:^4.11.3"
+    "@material-ui/lab": "npm:^4.0.0-alpha.61"
+    "@testing-library/jest-dom": "npm:^6.0.0"
+    "@testing-library/react": "npm:^16.0.0"
+    "@types/react": "npm:^18.0.0"
+    react: "npm:^18.0.2"
+    react-dom: "npm:^18.0.2"
+    react-router-dom: "npm:^6.30.2"
+  peerDependencies:
+    "@types/react": ^17.0.0 || ^18.0.0
+    react: ^17.0.0 || ^18.0.0
+    react-dom: ^17.0.0 || ^18.0.0
+    react-router-dom: ^6.30.2
+  peerDependenciesMeta:
+    "@types/react":
+      optional: true
+  languageName: unknown
+  linkType: soft
+
 "@backstage/plugin-devtools-backend@workspace:^, @backstage/plugin-devtools-backend@workspace:plugins/devtools-backend":
   version: 0.0.0-use.local
   resolution: "@backstage/plugin-devtools-backend@workspace:plugins/devtools-backend"
@@ -31092,6 +31176,8 @@ __metadata:
     "@backstage/plugin-catalog-import": "workspace:^"
     "@backstage/plugin-catalog-react": "workspace:^"
     "@backstage/plugin-catalog-unprocessed-entities": "workspace:^"
+    "@backstage/plugin-cost-optimization": "workspace:^"
+    "@backstage/plugin-cost-optimization-common": "workspace:^"
     "@backstage/plugin-devtools": "workspace:^"
     "@backstage/plugin-home": "workspace:^"
     "@backstage/plugin-home-react": "workspace:^"
@@ -31238,6 +31324,8 @@ __metadata:
     "@backstage/plugin-catalog-backend-module-openapi": "workspace:^"
     "@backstage/plugin-catalog-backend-module-scaffolder-entity-model": "workspace:^"
     "@backstage/plugin-catalog-backend-module-unprocessed": "workspace:^"
+    "@backstage/plugin-cost-optimization-backend": "workspace:^"
+    "@backstage/plugin-cost-optimization-backend-module-aws": "workspace:^"
     "@backstage/plugin-devtools-backend": "workspace:^"
     "@backstage/plugin-events-backend": "workspace:^"
     "@backstage/plugin-events-backend-module-google-pubsub": "workspace:^"

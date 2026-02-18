@@ -1,0 +1,53 @@
+{
+  "name": "@backstage/plugin-cost-optimization-backend-module-aws",
+  "version": "0.1.0",
+  "description": "AWS Cost Explorer provider module for the cost-optimization backend plugin",
+  "backstage": {
+    "role": "backend-plugin-module",
+    "pluginId": "cost-optimization",
+    "pluginPackages": [
+      "@backstage/plugin-cost-optimization",
+      "@backstage/plugin-cost-optimization-backend",
+      "@backstage/plugin-cost-optimization-common",
+      "@backstage/plugin-cost-optimization-node"
+    ]
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "keywords": [
+    "backstage",
+    "cost-optimization",
+    "aws"
+  ],
+  "homepage": "https://backstage.io",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/backstage/backstage",
+    "directory": "plugins/cost-optimization-backend-module-aws"
+  },
+  "license": "Apache-2.0",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "backstage-cli package build",
+    "clean": "backstage-cli package clean",
+    "lint": "backstage-cli package lint",
+    "prepack": "backstage-cli package prepack",
+    "postpack": "backstage-cli package postpack",
+    "start": "backstage-cli package start",
+    "test": "backstage-cli package test"
+  },
+  "dependencies": {
+    "@backstage/backend-plugin-api": "workspace:^",
+    "@backstage/config": "workspace:^",
+    "@backstage/plugin-cost-optimization-common": "workspace:^",
+    "@backstage/plugin-cost-optimization-node": "workspace:^"
+  },
+  "devDependencies": {
+    "@backstage/cli": "workspace:^"
+  }
+}

@@ -80,6 +80,10 @@ import {
   LightBox,
 } from '@backstage/plugin-techdocs-module-addons-contrib';
 import { EntityTechdocsContent } from '@backstage/plugin-techdocs';
+import {
+  EntityCostCard,
+  EntityCostContent,
+} from '@backstage/plugin-cost-optimization';
 
 const customEntityFilterKind = ['Component', 'API', 'System'];
 
@@ -188,6 +192,10 @@ const overviewContent = (
     <Grid item md={8} xs={12}>
       <EntityHasSubcomponentsCard variant="gridItem" />
     </Grid>
+
+    <Grid item md={4} xs={12}>
+      <EntityCostCard />
+    </Grid>
   </Grid>
 );
 
@@ -230,10 +238,14 @@ const serviceEntityPage = (
     <EntityLayout.Route path="/kubernetes" title="Kubernetes">
       <EntityKubernetesContent />
     </EntityLayout.Route>
+
+    <EntityLayout.Route path="/costs" title="Costs">
+      <EntityCostContent />
+    </EntityLayout.Route>
   </EntityLayoutWrapper>
 );
 
-const websiteEntityPage = (
+const websiteEntityPage= (
   <EntityLayoutWrapper>
     <EntityLayout.Route path="/" title="Overview">
       {overviewContent}

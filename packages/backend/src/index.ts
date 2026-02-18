@@ -53,6 +53,8 @@ backend.add(import('@backstage/plugin-catalog-backend'));
 backend.add(import('@backstage/plugin-events-backend'));
 backend.add(import('@backstage/plugin-devtools-backend'));
 backend.add(import('@backstage/plugin-kubernetes-backend'));
+backend.add(import('@backstage/plugin-cost-optimization-backend'));
+backend.add(import('@backstage/plugin-cost-optimization-backend-module-aws'));
 backend.add(
   import('@backstage/plugin-permission-backend-module-allow-all-policy'),
 );

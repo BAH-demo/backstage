@@ -52,6 +52,8 @@
     "@backstage/plugin-catalog-import": "workspace:^",
     "@backstage/plugin-catalog-react": "workspace:^",
     "@backstage/plugin-catalog-unprocessed-entities": "workspace:^",
+    "@backstage/plugin-cost-optimization": "workspace:^",
+    "@backstage/plugin-cost-optimization-common": "workspace:^",
     "@backstage/plugin-devtools": "workspace:^",
     "@backstage/plugin-home": "workspace:^",
     "@backstage/plugin-home-react": "workspace:^",

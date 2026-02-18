@@ -74,6 +74,7 @@ import {
 import { CustomizableHomePage } from './components/home/CustomizableHomePage';
 import { HomePage } from './components/home/HomePage';
 import { BuiThemerPage } from '@backstage/plugin-mui-to-bui';
+import { CostDashboardPage } from '@backstage/plugin-cost-optimization';
 
 const app = createApp({
   apis,
@@ -210,6 +211,7 @@ const routes = (
     </Route>
     <Route path="/notifications" element={<NotificationsPage />} />
     <Route path="/mui-to-bui" element={<BuiThemerPage />} />
+    <Route path="/cost-optimization" element={<CostDashboardPage />} />
   </FlatRoutes>
 );
 
